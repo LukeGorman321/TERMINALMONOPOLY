@@ -291,10 +291,6 @@ def housing_logic(p: MonopolyPlayer, mode: str = "normal", propertyid: str = "",
     if not exit_flag:
         if mode == "normal":
             housing_logic(p)
-        elif choice == "s":
-            sell_logic(p)
-        elif choice == "m":
-            mortgage_logic(p)
         else:
             print("\033[38;0H" + ' ' * 70)
             print("\033[38;0HInvalid option!")
